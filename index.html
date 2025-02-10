@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Selector de Color RGB</h1>
+        <div class="form-group">
+            <div class="range-label">
+                <label for="redRange">Rojo</label>
+                <span id="redValue">0</span>
+            </div>
+            <input type="range" class="form-control-range" id="redRange" min="0" max="255">
+            <input type="number" class="form-control" id="redInput" min="0" max="255" value="0">
+        </div>
+        <div class="form-group">
+            <div class="range-label">
+                <label for="greenRange">Verde</label>
+                <span id="greenValue">0</span>
+            </div>
+            <input type="range" class="form-control-range" id="greenRange" min="0" max="255">
+            <input type="number" class="form-control" id="greenInput" min="0" max="255" value="0">
+        </div>
+        <div class="form-group">
+            <div class="range-label">
+                <label for="blueRange">Azul</label>
+                <span id="blueValue">0</span>
+            </div>
+            <input type="range" class="form-control-range" id="blueRange" min="0" max="255">
+            <input type="number" class="form-control" id="blueInput" min="0" max="255" value="0">
+        </div>
+        <h2 class="text-center my-4">Cuadro de color</h2>
+        <div class="color-box" id="colorBox"></div>
+        <p class="text-center mt-3">Código Hexadecimal: <span id="hexCode">#000000</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
